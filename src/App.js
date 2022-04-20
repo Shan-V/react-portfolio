@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import ContractPage from './pages/ContactPage';
+import WorkPage from './pages/WorkPage';
+import ResumePage from './pages/ResumePage';
 import './App.css';
 
 function App() {
+  /* cSpell:disable */
+  const myName = 'Abirami.Theepan';
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='flex flex-col app bg-body text-white font-poppins min-h-screen'>
+      <Router>
+        <>
+          <Header myName={myName} />
+        </>
+
+        <Routes>
+          <Route path='/resume' element={<ResumePage />} />
+          <Route path='/work' element={<WorkPage />} />
+          <Route path='/contact' element={<ContractPage />} />
+          <Route path='/' element={<HomePage />} />
+        </Routes>
+        <>
+          <Footer />
+        </>
+      </Router>
     </div>
   );
 }
