@@ -13,7 +13,7 @@ function Header({ myName }) {
         <div className='text-xs md:text-base lg:text-xl font-bold text-pink-100'>
           {myName}
         </div>
-        <div className='hidden md:flex space-x-12 items-center'>
+        <div className='hidden md:flex space-x-12 items-center z-50'>
           <NavLink to='/' className='text-pink-200'>
             About Me
           </NavLink>
