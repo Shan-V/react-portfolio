@@ -1,8 +1,15 @@
+import resume from '../file/resume.pdf';
+
 function ResumePage() {
   return (
     <main className='container mx-auto text-center md:px-10'>
       <div className=''>
         <strong className='text-xl font-medium'>Contact Details</strong>
+        <div className='bg-light'>
+          <a href={resume}>
+            <button>Download Resume</button>
+          </a>
+        </div>
         <ul className='mt-2 mb-10'>
           <li className='px-2 mt-1'>
             <strong className='mr-1'>Phone </strong>

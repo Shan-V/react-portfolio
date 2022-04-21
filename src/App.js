@@ -11,7 +11,7 @@ function App() {
   /* cSpell:disable */
   const myName = 'Abirami.Theepan';
   return (
-    <div className='flex flex-col app bg-body text-white font-poppins min-h-screen'>
+    <div className='flex flex-col app bg-body text-white font-poppins min-h-screen opacity-90'>
       <Router>
         <>
           <Header myName={myName} />

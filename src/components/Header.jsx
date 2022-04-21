@@ -7,13 +7,14 @@ function Header({ myName }) {
   const menuToggleHandler = () => {
     setMenuOpen((p) => !p);
   };
+
   return (
     <header className='py-6'>
       <div className='container text-xs lg:text-base flex justify-around md:justify-between items-center mx-auto px-4 md:px-8 lg:px-18 w-full'>
         <div className='text-xs md:text-base lg:text-xl font-bold text-pink-100'>
           {myName}
         </div>
-        <div className='hidden md:flex space-x-12 items-center z-50'>
+        <div className='hidden md:flex space-x-12 items-center'>
           <NavLink to='/' className='text-pink-200'>
             About Me
           </NavLink>
@@ -26,10 +27,7 @@ function Header({ myName }) {
           </NavLink>
         </div>
 
-        <div
-          className=' cursor-pointer md:hidden z-50'
-          onClick={menuToggleHandler}
-        >
+        <div className=' cursor-pointer md:hidden' onClick={menuToggleHandler}>
           <svg
             width='26'
             height='18'
@@ -48,7 +46,7 @@ function Header({ myName }) {
         <div
           className={`${
             menuOpen === true ? 'flex' : 'hidden'
-          } absolute opacity-90 flex-col items-center self-end py-4 mt-5 space-y-6 font-bold sm:w-auto sm:self-center left-6 right-6 drop-shadow-2xl bg-body z-50`}
+          } absolute opacity-90 flex-col items-center self-end py-4 mt-5 space-y-6 font-bold sm:w-auto sm:self-center left-6 right-6 drop-shadow-2xl bg-body`}
         >
           <NavLink to='/' className='text-pink-200 font-bold'>
             About Me

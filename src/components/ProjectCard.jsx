@@ -1,10 +1,10 @@
 function ProjectCard({ title, url, description, githubUrl, deployedUrl }) {
   return (
-    <div className='text-center max-w-sm rounded overflow-hidden shadow-lg z-50'>
+    <div className='col-span-1 flex flex-col p-4 rounded shadow-lg'>
       <img className='w-full bg-nav object-cover' src={url} alt={title} />
       <div className='px-6 py-4'>
         <div className='font-bold text-xl mb-2'>{title}</div>
-        <p className='text-gray-700 text-base'>{description}</p>
+        <p className='text-gray-200 text-base'>{description}</p>
       </div>
       <div className='px-6 pt-4 pb-2'>
         <a
