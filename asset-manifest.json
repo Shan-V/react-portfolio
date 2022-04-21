@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Shan-V/react-portfolio/static/css/main.db39f7cd.css",
+    "main.js": "/Shan-V/react-portfolio/static/js/main.160cb750.js",
+    "static/media/progressiveWebApplication.jpg": "/Shan-V/react-portfolio/static/media/progressiveWebApplication.41b48734a823bd19d798.jpg",
+    "static/media/background.jpg": "/Shan-V/react-portfolio/static/media/background.0aa80b8160d6476f4267.jpg",
+    "static/media/resume.pdf": "/Shan-V/react-portfolio/static/media/resume.32661c947de3dec48e62.pdf",
+    "static/media/profile.jpg": "/Shan-V/react-portfolio/static/media/profile.248ed5a917b3bbcc5c77.jpg",
+    "index.html": "/Shan-V/react-portfolio/index.html",
+    "main.db39f7cd.css.map": "/Shan-V/react-portfolio/static/css/main.db39f7cd.css.map",
+    "main.160cb750.js.map": "/Shan-V/react-portfolio/static/js/main.160cb750.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db39f7cd.css",
+    "static/js/main.160cb750.js"
+  ]
+}
